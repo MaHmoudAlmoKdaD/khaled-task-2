@@ -2,12 +2,6 @@ import { useEffect } from "react";
 import Slider from "react-slick";
 import './sliderImage.scss'
 const SliderImages = ({ images = [] }) => {
-  // useEffect(() => {
-  //   if(window.innerWidth < 600){
-  //     // document.getElementById('image').style.width = '50%'
-  //     document.getElementById('imageSlider').style.height = '200%'
-  //   }
-  // }, [])
   
   var settings = {
     dots: true,
