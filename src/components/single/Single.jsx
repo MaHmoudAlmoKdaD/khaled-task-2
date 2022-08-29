@@ -101,8 +101,8 @@ const Single = () => {
         </Grid>
       </Grid>
       <Grid container spacing={2}>
-        <Grid>
-          <Grid item lg={6} md={8} sm={12}>
+        <Grid item lg={6} md={8} sm={12}>
+          <Grid item >
             <Typography className={classes.paragraph}>
               {doc?.description}
             </Typography>
@@ -119,7 +119,7 @@ const Single = () => {
             </Button>
           </Grid>
         </Grid>
-        <Grid item lg={6} md={8} sm={9} className={classes.slider}>
+        <Grid item lg={6} md={8} sm={9} className={classes.slider} style={{width: '100%'}}>
           <SliderImages images={doc?.carousel} />
         </Grid>
       </Grid>

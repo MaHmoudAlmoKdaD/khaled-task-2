@@ -1,5 +1,14 @@
+import { useEffect } from "react";
 import Slider from "react-slick";
+import './sliderImage.scss'
 const SliderImages = ({ images = [] }) => {
+  // useEffect(() => {
+  //   if(window.innerWidth < 600){
+  //     // document.getElementById('image').style.width = '50%'
+  //     document.getElementById('imageSlider').style.height = '200%'
+  //   }
+  // }, [])
+  
   var settings = {
     dots: true,
     infinite: true,
@@ -10,16 +19,13 @@ const SliderImages = ({ images = [] }) => {
     pauseOnHover: true,
   };
   return (
-    <div style={{width: '90vw'}}>
+    <div style={{width: '100%'}}>
       <Slider {...settings}>
         {images?.map((image, index) => {
           return (
             <div key={`image-${index}`}>
-              <img
-                style={{width:'100%',  height: "450px" }}
-                src={image.image.src}
-                alt=""
-              />
+             
+              <img src={image.image.src} alt="" className='imageSlider' />
             </div>
           );
         })}
