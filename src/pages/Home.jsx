@@ -17,22 +17,8 @@ import { BrowserRouter as Router, Routes } from "react-router-dom";
 
 
 const Home = ({data = []}) => {
-  // const [data, setData] = useState([]);
+  
   const [index, setIndex] = useState(1);
-  // const ref = collection(db, "grain");
-  // useEffect(() => {
-  //   getGrainsDocs();
-  // }, []);
-  // const getGrainsDocs = async () => {
-  //   const data = await getDocs(ref);
-  //   let temp = data.docs.map((doc) => {
-  //     return {
-  //       ...doc.data(),
-  //       id: doc.id,
-  //     };
-  //   });
-  //   setData(temp);
-  // };
   return (
     <div className="App">
       <Container maxWidth="xl">
